@@ -1,0 +1,9 @@
+{
+  "db": {
+    "pwd": "DB_PSWD",
+    "db": "DB_CONNECTION_STRING"
+  },
+  "zookeeper": {
+    "host": "ZOOKEEPER_HOST"
+  }
+}

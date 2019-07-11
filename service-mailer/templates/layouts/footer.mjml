@@ -1,0 +1,18 @@
+ <mj-section padding-top="20px" padding-bottom="10px" padding-top="0">
+    <mj-column >
+      <mj-social padding-top="20px" icon-size="20px">
+        <mj-social-element href="https://www.facebook.com/nodejsarmenia" src="https://img.icons8.com/color/72/facebook.png"></mj-social-element>
+        <mj-social-element href="https://www.instagram.com/nodejsarmenia" src="https://img.icons8.com/color/2x/instagram-new.png"></mj-social-element>
+      </mj-social>
+    </mj-column>
+ </mj-section>
+
+ <mj-section  padding-bottom="20px">
+  <mj-column>
+   <mj-text color="#666" font-size="11px" align="center">
+      You are receiving this email because you are a registered user at Node.js Armenia
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding-bottom="20px" padding-top="0px"></mj-section>

@@ -1,0 +1,9 @@
+{
+  "apps":[
+    {
+      "name": "api-users",
+      "script": "./server.js",
+      "watch": true
+    }
+  ]
+}

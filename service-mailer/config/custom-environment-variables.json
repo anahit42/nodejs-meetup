@@ -1,0 +1,6 @@
+{
+  "sendgridKey": "SENDGRID_KEY",
+  "zookeeper": {
+    "host": "ZOOKEEPER_HOST"
+  }
+}

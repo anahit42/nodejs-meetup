@@ -1,0 +1,12 @@
+db = db.getSiblingDB('api-users');
+
+try {    
+    db.createUser({
+      user: "api",
+      pwd: "{{db-pswd}}",
+      roles: [ "readWrite" ]
+    });
+
+} catch(err) {
+    print(err.message);
+}

@@ -1,0 +1,9 @@
+{
+  "apps":[
+    {
+      "name": "service-mailer",
+      "script": "./consumer.js",
+      "watch": true
+    }
+  ]
+}

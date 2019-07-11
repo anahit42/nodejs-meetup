@@ -1,0 +1,46 @@
+version: '2'
+services:
+  api-users:
+    container_name: api-users
+    build: ./api-users
+    ports:
+    - "3001:3000"
+    depends_on:
+    - api-users-db
+    - kafka
+    env_file:
+    - ./api-users/.env
+  api-users-db:
+    container_name: api-users-db
+    build: ./api-users-db
+    ports:
+    - "27018:27017"
+    volumes:
+    - /data/mongodb/api-users-db:/data/db
+    env_file:
+    - ./api-users-db/.env
+  service-mailer:
+    container_name: service-mailer
+    build: ./service-mailer
+    env_file:
+    - ./service-mailer/.env
+    depends_on:
+    - kafka
+  zookeeper:
+    container_name: zookeeper
+    image: wurstmeister/zookeeper
+    ports:
+    - "2181:2181"
+  kafka:
+    container_name: kafka
+    image: wurstmeister/kafka:2.11-1.0.1
+    ports:
+    - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_CREATE_TOPICS: "user-emails:1:1"
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+    - zookeeper

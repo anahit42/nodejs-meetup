@@ -1,0 +1,30 @@
+<mjml owa=”desktop”>
+ <mj-head>
+    <mj-title>User Registration</mj-title>
+    <mj-attributes>
+      <mj-text align="left" color="#000" font-weight="500" font-size="17px" line-height="22px" font-family="'Raleway',sans-serif"></mj-text>
+    </mj-attributes>
+  </mj-head>
+   <mj-body background-color="#eef0f3">
+   <mj-include path="../layouts/header.mjml" />
+   <mj-section background-color="#fff" border-radius="18px">
+        <mj-column width="100%">
+         <mj-text padding-bottom="20px" align="left" >
+            Hey {{FIRST_NAME}} {{LAST_NAME}},
+          </mj-text>
+         <mj-text align="left" >
+              Welcome to Node.js Armenia Community.
+            <p>Node.js Armenia is a community of enthusiastic Node.js developers in Armenia with different level of experience.</p>
+            <p>Feel free to contact us on social media platforms and participate in community discussions.</p>
+          </mj-text>
+        </mj-column>
+
+
+         <mj-column width="25%">
+      </mj-column>
+
+      </mj-section>
+      <mj-include path="../layouts/footer.mjml" />
+
+  </mj-body>
+</mjml>

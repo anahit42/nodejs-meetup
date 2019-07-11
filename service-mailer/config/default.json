@@ -1,0 +1,10 @@
+{
+  "port": 3201,
+  "consumer": {
+    "consumerGroup": {
+      "groupId": "UserSupportGroup"
+    },
+    "topics": ["user-emails"],
+    "concurrency": 1
+  }
+}

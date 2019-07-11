@@ -1,0 +1,15 @@
+{
+  "db": {
+    "user": "api"
+  },
+  "producer": {
+    "clientId": "api-users",
+    "topics": {
+      "userEmails": "user-emails"
+    }
+  },
+  "port": 3000,
+  "auth": {
+    "passwordRegExp": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})"
+  }
+}

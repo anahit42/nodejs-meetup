@@ -1,0 +1,7 @@
+<mj-section padding-bottom="40px" padding-top="50px">
+  <mj-column width="40%" border-right="0px">
+        <mj-image src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png" alt="Node.js" border="none"
+            padding-right="0px" padding-bottom="0px" padding-top="0px" align="center">
+        </mj-image>
+  </mj-column>
+</mj-section>
