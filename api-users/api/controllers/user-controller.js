@@ -17,7 +17,7 @@ class UserController {
   static async get (ctx) {
     const { userId } = ctx.params;
 
-    const user = await UserModel.findOne({ _id: userId });
+    const user = await UserModel.findOne({ _id: userId }, { password: 0 });
 
     if (!user) {
       throw NotFoundError(`User not found`, 'user');

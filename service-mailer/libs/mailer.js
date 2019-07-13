@@ -55,8 +55,6 @@ class MailerLib {
     try {
       const html = await MailerLib.render(path, options);
       await MailerLib.sendEmail({ email, html, subject, text });
-
-      return true;
     } catch (error) {
       console.log(error.message);
     }
