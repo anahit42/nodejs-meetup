@@ -15,7 +15,7 @@
     "koa-logger": "^2.0.0",
     "koa-response-time": "^2.0.0",
     "koa-router": "^7.0.1",
-    "mongoose": "^5.3.3",
+    "mongoose": "^5.7.5",
     "request": "^2.87.0",
     "request-promise": "4.2.2"
   },
